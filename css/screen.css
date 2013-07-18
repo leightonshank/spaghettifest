@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'PureEvil2Regular';
+    src: url('/assets/fonts/pure_evil-webfont.eot');
+    src: url('/assets/fonts/pure_evil-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/pure_evil-webfont.woff') format('woff'),
+         url('/assets/fonts/pure_evil-webfont.ttf') format('truetype'),
+         url('/assets/fonts/pure_evil-webfont.svg#pure_evil_2regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #000;
+    color: #c4c4c4;
+}
+
+.hero-unit {
+    background-color: #000;
+}
+.hero-unit h1 {
+    text-indent: -9999px;
+    height: 565px;
+    width: 820px;
+    background: url(/assets/web.png) no-repeat center center;
+    margin:0;
+}
+
+h2 {
+    font-family: "PureEvil2Regular", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+    font-size: 42px;
+    text-shadow: #fff -2px -2px;
+    color: #666;
+    letter-spacing: 5px;
+}
+
+dl dt {
+    margin-top: 18px;
+    border-top: 1px dotted #666;
+    padding-top: 18px;
+    font-size: 19px;
+    margin-bottom: 12px;
+}
+
+dl dt:first-child {
+    margin-top: 0;
+    padding-top: 0;
+    border-top: none;
+}
+
+.hero-unit {
+    margin-bottom: 0;
+}
+
+.navbar .brand {
+    height: 40px;
+    width: 119px;
+    background: url(/assets/web-sm.png) no-repeat center center;
+    padding-top: 0;
+    padding-bottom: 0;
+    text-indent: -9999px;
+}
+
+a, a:link, a:visited { color: #fff; }
+a:hover { color: #b4b4b4; }

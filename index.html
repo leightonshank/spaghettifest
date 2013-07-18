@@ -1,0 +1,72 @@
+---
+layout: default
+title: Spaghettifest 11
+---
+
+<div class="hero-unit">
+  <h1>Spaghettifest 11</h1>
+</div>
+<div>
+  <p class="lead">Spaghettifest is one of the great home-grown music festivals of the Shenandoah Valley. Hosted by the funk mob Midnight Spaghetti &amp; The Chocolate G-Strings, the annual charitable event brings together a thriving community of music lovers and outstanding bands of innumerable genres.</p>
+  <p class="lead">Spaghettifest boasts three stages with over 40 bands along with artisans, vendors, and art installations.</p>
+  <p class="lead">Each year, all festival proceeds are donated to a selected charity. This year's charity will be announced in the coming weeks.</p>
+</div>
+<div class="row">
+  <div class="span4">
+    <h2 class="text-center">The Bands</h2>
+    {% include band_media.html name="Midnight Spaghetti and the Chocolate G-Strings" description="Retro funk mob Midnight Spaghetti &amp; The Chocolate G-Strings satisfy discriminating dancers with monster grooves." %}
+  </div>
+  <div class="span4">
+    <h2 class="text-center">Get Tickets</h2>
+    <p class="lead text-center">$60 pre-sale / $70 door</p>
+    <p>
+      <a class="btn btn-warning btn-large btn-block"
+              href="http://www.showclix.com/event/SPAGHETTIFEST11"
+              target="_blank"
+              >Buy Tickets Now</a>
+    </p>
+    <ul>
+      <li><strong>All tickets purchased online are WILL CALL</strong>, bring photo ID or printed purchase receipt to claim at the gate.</li>
+      <li>Spaghettifest is an all ages event, children under 6 are admitted free of charge.</li>
+      <li>Tickets are for the entire weekend including camping, no partial tickets are available.</li>
+      <li>Re-entry to the festival is only permitted with provided wristband.</li>
+      <li>Lost tickets cannot be replaced.</li>
+      <li>All tickets are non-refundable.</li>
+    </ul>
+  </div>
+  <div class="span4">
+    <h2 class="text-center">Latest News</h2>
+    <ul class="unstyled posts">
+      {% for post in site.posts %}
+      <li>
+        <p class="lead"><a href="{{ post.url }}">{{ post.title }}</a></p>
+        {{ post.content | strip_html | truncate:160 }}
+        <a href="{{ post.url }}">more</a>
+        <p><small>{{ post.date | date_to_string}}</small></p>
+      {% endfor %}
+    </ul>
+    <a href="/news.html" class="btn btn-inverse pull-right">Show all news &raquo;</a>
+  </div>
+</div>
+<div class="row">
+  <div class="span12">
+    <h2 class="text-left">At the Festival</h2>
+    <ul>
+      <li>The park opens at noon on Friday 9/27 and closes at 5 p.m. on 9/29</li>
+      <li>Festival patrons will check in at The Spaghettifest Parking Facility located before the venue on Mountain Valley Road at the Ruritan Club.</li>
+      <li>
+      After check-in at the box office, everyone will be shuttled a short ride into the park. Only ticketed patrons may ride shuttles to the event.<br />
+      <strong>Only artist and event staff will be driving their vehicles into the park at their designated times.</strong>
+      </li>
+      <li>Be prepared for the weather, the festival is rain or shine.</li>
+      <li>Leave your glass bottles, weapons, fireworks, and controlled substances at home.</li>
+      <li>All campsites are first come, first serve.</li>
+      <li>Groups wishing to camp together should plan to arrive together.</li>
+      <li>Portable toilets will be available for use.</li>
+      <li>Keep fires in the designated areas.</li>
+      <li>Keep your pets on a leash and clean up after them.</li>
+      <li>Preserve the site by recycling and using the available bathrooms.</li>
+      <li>Photography and audio/video recording are permitted for personal use only.</li>
+    </ul>
+  </div>
+</div>
