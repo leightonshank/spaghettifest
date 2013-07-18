@@ -37,11 +37,10 @@ title: Spaghettifest 11
   <div class="span4">
     <h2 class="text-center">Latest News</h2>
     <ul class="unstyled posts">
-      {% for post in site.posts %}
+      {% for post in site.posts limit:5 %}
       <li>
-        <p class="lead"><a href="{{ post.url }}">{{ post.title }}</a></p>
-        {{ post.content | strip_html | truncate:160 }}
-        <a href="{{ post.url }}">more</a>
+        <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+        {{ post.excerpt }}
         <p><small>{{ post.date | date_to_string}}</small></p>
       {% endfor %}
     </ul>
@@ -53,10 +52,9 @@ title: Spaghettifest 11
     <h2 class="text-left">At the Festival</h2>
     <ul>
       <li>The park opens at noon on Friday 9/27 and closes at 5 p.m. on 9/29</li>
-      <li>Festival patrons will check in at The Spaghettifest Parking Facility located before the venue on Mountain Valley Road at the Ruritan Club.</li>
       <li>
-      After check-in at the box office, everyone will be shuttled a short ride into the park. Only ticketed patrons may ride shuttles to the event.<br />
-      <strong>Only artist and event staff will be driving their vehicles into the park at their designated times.</strong>
+        <span class="label label-success">Updated</span>
+        Parking for festival patrons is conveniently located right outside the venue this year.
       </li>
       <li>Be prepared for the weather, the festival is rain or shine.</li>
       <li>Leave your glass bottles, weapons, fireworks, and controlled substances at home.</li>

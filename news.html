@@ -10,9 +10,10 @@ title: Spaghettifest 11 | Festival News
       {% for post in site.posts %}
       <li>
         <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
-        {{ post.date | date_to_string }} &mdash;
-        {{ post.content | strip_html | truncate:160 }}
-        <a href="{{ post.url }}">show more</a>
+        <p class="label label-inverse">{{ post.date | date: "%B %d, %Y" }}</p>
+        <div class="post">
+          {{ post.content }}
+        </div>
       </li>
       {% endfor %}
     </ul>
