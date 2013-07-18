@@ -1,2 +1,6 @@
 name: Spaghettifest 11
 pygments: true
+ftp_host: midnightspaghetti.com
+ftp_username: u39395643-midnight
+ftp_passive: true
+ftp_dir: /spaghettifest
